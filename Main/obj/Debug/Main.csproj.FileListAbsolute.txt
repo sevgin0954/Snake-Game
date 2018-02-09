@@ -1,0 +1,7 @@
+C:\Users\sevgin\Documents\vs17\SnakeGame\Main\bin\Debug\Main.exe.config
+C:\Users\sevgin\Documents\vs17\SnakeGame\Main\bin\Debug\Main.exe
+C:\Users\sevgin\Documents\vs17\SnakeGame\Main\bin\Debug\Main.pdb
+C:\Users\sevgin\Documents\vs17\SnakeGame\Main\obj\Debug\Main.csprojResolveAssemblyReference.cache
+C:\Users\sevgin\Documents\vs17\SnakeGame\Main\obj\Debug\Main.csproj.CoreCompileInputs.cache
+C:\Users\sevgin\Documents\vs17\SnakeGame\Main\obj\Debug\Main.exe
+C:\Users\sevgin\Documents\vs17\SnakeGame\Main\obj\Debug\Main.pdb
