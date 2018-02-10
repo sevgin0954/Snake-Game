@@ -86,7 +86,14 @@ class Program
                 if (isAppleEaten)
                 {
                     snakeLenght++;
-                    delay -= 10;
+                    if (delay > 70)
+                    {
+                        delay -= 10;
+                    }
+                    else if (delay > 45)
+                    {
+                        delay -= 1;
+                    }
                     applePosition.row = random.Next(Console.WindowHeight);
                     applePosition.col = random.Next(Console.BufferWidth);
                     isAppleEaten = false;
