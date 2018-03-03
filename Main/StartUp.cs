@@ -6,18 +6,6 @@ class Program
 {
     static List<Position> snakeBody;
 
-    struct Position
-    {
-        public int row;
-        public int col;
-
-        public Position(int row, int col)
-        {
-            this.row = row;
-            this.col = col;
-        }
-    }
-
     static Position[] directions = new Position[]
         {
             // Up
@@ -32,7 +20,7 @@ class Program
 
     static Position applePosition;
 
-    static bool isAppleEaten = true;
+    static bool isAppleEaten = false;
 
     static int snakeLenght = 2;
 
@@ -64,6 +52,8 @@ class Program
             Console.BufferWidth = Console.WindowWidth;
 
             Random random = new Random();
+            applePosition.row = random.Next(Console.WindowHeight);
+            applePosition.col = random.Next(Console.BufferWidth);
 
             while (isGameOver == false)
             {
@@ -86,6 +76,8 @@ class Program
                 if (isAppleEaten)
                 {
                     snakeLenght++;
+                    Console.Title = $"Snake Lenght: --- {snakeLenght} ---";
+
                     if (delay > 70)
                     {
                         delay -= 10;
@@ -195,7 +187,6 @@ class Program
         else if (nextPosition.row == applePosition.row && nextPosition.col == applePosition.col)
         {
             isAppleEaten = true;
-            Console.Title = $"Snake Lenght: --- {snakeLenght} ---";
         }
         else
         {
