@@ -29,7 +29,6 @@ class Program
     static void Main()
     {
         Console.WriteLine("CHANGE CONSOLE FONT TO 'RASTER FONTS'");
-        Console.WriteLine("!!!your pc doesn't meet the minimum system requirements!!!");
         Console.WriteLine("PRESS ANY KEY TO START THE GAME");
         Console.ReadKey(true);
 
